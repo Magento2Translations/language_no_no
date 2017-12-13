@@ -53,10 +53,13 @@ Close,Lukk,module,Magento_AdminNotification
 failed.,mislyktes.,module,Magento_Authorizenet
 successful.,vellykket.,module,Magento_Authorizenet
 authorize,autoriser,module,Magento_Authorizenet
+"authorize and capture","godkjenn og fang",module,Magento_Authorizenet
 capture,fange,module,Magento_Authorizenet
 refund,tilbakebetaling,module,Magento_Authorizenet
 void,Ugyldig,module,Magento_Authorizenet
 "Gateway error: %1","Gateway-feil: %1",module,Magento_Authorizenet
+"Something went wrong in the payment gateway.","Noe gikk galt i betalingsportalen.",module,Magento_Authorizenet
+"Invalid amount for capture.","Ugyldig beløp for fangst.",module,Magento_Authorizenet
 "Invalid transaction ID.","Ugyldig transaksjons-ID.",module,Magento_Authorizenet
 "Credit Card Type",Kredittkorttype,module,Magento_Authorizenet
 "Please Select","Vennligst velg",module,Magento_Authorizenet
@@ -182,6 +185,7 @@ Reset,Nullstill,module,Magento_Backend
 "Export block for grid %1 is not defined","Eksport blokk for rutenett %1 er ikke definert",module,Magento_Backend
 "Reset Filter","Tilbakestill filter",module,Magento_Backend
 Search,Søk,module,Magento_Backend
+Any,"Hvilket som helst",module,Magento_Backend
 "All Countries","Alle land",module,Magento_Backend
 From,Fra,module,Magento_Backend
 To,Til,module,Magento_Backend
@@ -206,6 +210,7 @@ Submit,Send,module,Magento_Backend
 "You flushed the cache storage.","Du tømmet hurtigbuffelageret.",module,Magento_Backend
 "The Magento cache storage has been flushed.","Magento butikkbuffer lagringen er tømt.",module,Magento_Backend
 "You can't change status of cache type(s) in production mode","Du kan ikke endre status for hurtigbuffertype(r) i produksjonsmodus",module,Magento_Backend
+"%1 cache type(s) disabled.","%1 cache type(r) deaktivert.",module,Magento_Backend
 Dashboard,Kontrollpanel,module,Magento_Backend
 "invalid request","ugyldig forespørsel",module,Magento_Backend
 "see error log for details","se feilloggen for detaljer",module,Magento_Backend
@@ -2658,6 +2663,8 @@ Title,Tittel,module,Magento_Authorizenet
 "Test Mode",Testmodus,module,Magento_Authorizenet
 "Accepted Currency","Akseptert valuta",module,Magento_Authorizenet
 Debug,Feilsøk,module,Magento_Authorizenet
+"Email Customer","E-post kunde",module,Magento_Authorizenet
+"Credit Card Types",Kredittkorttyper,module,Magento_Authorizenet
 "Credit Card Verification",Bankkort-verifisering,module,Magento_Authorizenet
 "Payment from Applicable Countries","Betaling fra aktuelle land",module,Magento_Authorizenet
 "Payment from Specific Countries","Betaling fra bestemte land",module,Magento_Authorizenet
