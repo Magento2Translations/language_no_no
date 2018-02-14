@@ -59,12 +59,20 @@ refund,tilbakebetaling,module,Magento_Authorizenet
 void,Ugyldig,module,Magento_Authorizenet
 "Gateway error: %1","Gateway-feil: %1",module,Magento_Authorizenet
 "Something went wrong in the payment gateway.","Noe gikk galt i betalingsportalen.",module,Magento_Authorizenet
-"Invalid amount for capture.","Ugyldig beløp for fangst.",module,Magento_Authorizenet
+"Invalid amount for capture.","Ugyldig beløp for mottak.",module,Magento_Authorizenet
 "Invalid transaction ID.","Ugyldig transaksjons-ID.",module,Magento_Authorizenet
+"Authorize Only","Bare godkjenne",module,Magento_Authorizenet
+"Authorize and Capture","Godkjenn og fang",module,Magento_Authorizenet
+"Unable to get transaction details. Try again later.","Kan ikke hente transaksjonsdetaljene. Prøv igjen senere.",module,Magento_Authorizenet
+"Electronic payments save the trees.","Elektroniske betalinger sparer trærne.",module,Magento_Authorizenet
 "Credit Card Type",Kredittkorttype,module,Magento_Authorizenet
 "Please Select","Vennligst velg",module,Magento_Authorizenet
 "Credit Card Number",Kredittkortnummer,module,Magento_Authorizenet
 "Expiration Date",Utløpsdato,module,Magento_Authorizenet
+"Card Verification Number",CVC-kode,module,Magento_Authorizenet
+"FDS Filter Action","FDS filterhandling",module,Magento_Authorizenet
+"AVS Response","AVS svar",module,Magento_Authorizenet
+"CAVV Response","CAVV svar",module,Magento_Authorizenet
 "Fraud Filters",Svindel-filtre,module,Magento_Authorizenet
 "Invalid Form Key. Please refresh the page.","Ugyldig skjemanøkkel. Vennligst oppdater siden.",module,Magento_Backend
 "You entered an invalid Secret Key. Please refresh the page.","Du oppga en ugyldig hemmelig nøkkel. Oppdater siden.",module,Magento_Backend
@@ -252,9 +260,6 @@ YTD,"Hittil i år",module,Magento_Backend
 "Authentication error occurred.","Godkjenningsfeil oppstod.",module,Magento_Backend
 Order,Ordre,module,Magento_Backend
 "Order #%1","Ordre # %1",module,Magento_Backend
-"Access denied","Ingen tilgang",module,Magento_Backend
-"Please try to sign out and sign in again.","Prøv å logge ut og logge på igjen.",module,Magento_Backend
-"If you continue to receive this message, please contact the store owner.","Hvis du vedvarende får denne meldingen, vennligst kontakt vutikkeieren.",module,Magento_Backend
 "You need more permissions to access this.","Du trenger flere tillatelser for å få tilgang til dette.",module,Magento_Backend
 "Welcome, please sign in","Velkommen, vennligst logg inn",module,Magento_Backend
 Username,Brukernavn,module,Magento_Backend
@@ -277,6 +282,7 @@ password,passord,module,Magento_Backend
 "Customer View",Kundevisning,module,Magento_Backend
 "Sign Out","Logg ut",module,Magento_Backend
 Next,Neste,module,Magento_Backend
+Catalog,Katalog,module,Magento_Backend
 "No records found.","Ingen oppføringer funnet.",module,Magento_Backend
 Images,Bilder,module,Magento_Backend
 "Big Image","Stort bilde",module,Magento_Backend
@@ -296,6 +302,8 @@ Actions,Handlinger,module,Magento_Backend
 "Unselect Visible","Fjern valg av synlige",module,Magento_Backend
 "Changes have been made to this section that have not been saved.","Det er gjort endringer i denne seksjonen som ikke er lagret.",module,Magento_Backend
 "This tab contains invalid data. Please resolve this before saving.","Denne kategorien inneholder ugyldige data. Vennligst rett opp dette før du lagrer.",module,Magento_Backend
+"The information in this tab has been changed.","Informasjonen under denne fanen er endret.",module,Magento_Backend
+Loading...,"Laster inn...",module,Magento_Backend
 "System Backup",System-sikkerhetskopiering,module,Magento_Backup
 "Database and Media Backup","Database- og mediabackup",module,Magento_Backup
 "Database Backup",Databasesikkerhetskopi,module,Magento_Backup
@@ -443,14 +451,31 @@ All,Alle,module,Magento_CatalogSearch
 Yes,Ja,module,Magento_CatalogSearch
 No,Nei,module,Magento_CatalogSearch
 Results,Resultater,module,Magento_CatalogSearch
+"Advanced Search Results","Avansert søkeresultater",module,Magento_CatalogSearch
 Grid,Rutenett,module,Magento_CatalogSearch
 List,Liste,module,Magento_CatalogSearch
+"Search Weight","Søk Vekt",module,Magento_CatalogSearch
 Relevance,Relevans,module,Magento_CatalogSearch
 "Search results for: '%1'","Søkeresultat for: ""%1""",module,Magento_CatalogSearch
+"Minimum Search query length is %1","Minimum søke lengde er %1",module,Magento_CatalogSearch
+"Please specify at least one search term.","Vennligst spesifiser minst ett søkeord.",module,Magento_CatalogSearch
 "%1 and greater","%1 og større",module,Magento_CatalogSearch
 "up to %1","opp til %1",module,Magento_CatalogSearch
+". "" which is inconsistent with state of scope resolver""",". ""som er uforenlig med 'state of scope resolver'""",module,Magento_CatalogSearch
+Category,Kategori,module,Magento_CatalogSearch
 "%1 and above","%1 og over",module,Magento_CatalogSearch
+"Sorry, something went wrong. You can find out more in the error log.","Beklager, noe gikk galt. Du kan finne ut mer i feilloggen.",module,Magento_CatalogSearch
+"Bucket does not exist","Bøtte finnes ikke",module,Magento_CatalogSearch
+Product,Produkt,module,Magento_CatalogSearch
+"Search Settings",Søkeinnstillinger,module,Magento_CatalogSearch
+Search,Søk,module,Magento_CatalogSearch
 "Advanced Search","Avansert søk",module,Magento_CatalogSearch
+"<strong>%1 item</strong> were found using the following search criteria","<strong>%1 element</strong> ble funnet ved hjelp av følgende søkekriterier",module,Magento_CatalogSearch
+"<strong>%1 items</strong> were found using the following search criteria","fant <strong>%1 elementer</strong> ved hjelp av følgende søkekriterier",module,Magento_CatalogSearch
+"Modify your search.","Endre søket ditt.",module,Magento_CatalogSearch
+name,navn,module,Magento_CatalogSearch
+"Don't see what you're looking for?","Finner du ikke det du leter etter?",module,Magento_CatalogSearch
+"Your search returned no results.","Ditt søk returnerte ingen resultater.",module,Magento_CatalogSearch
 "Create Permanent Redirect for old URL","Opprette fast omdirigering for gammel URL",module,Magento_CatalogUrlRewrite
 "Invalid URL key","Ugyldig URL-nøkkel",module,Magento_CatalogUrlRewrite
 "Conditions Combination",Betingelsekombinasjon,module,Magento_CatalogWidget
@@ -475,6 +500,7 @@ Day,Dag,module,Magento_Catalog
 Month,Måned,module,Magento_Catalog
 Year,År,module,Magento_Catalog
 "<label class=""label""><span>from</span></label>","<label class=""label""> <span>fra</span></label>",module,Magento_Catalog
+"<label class=""label""><span>to</span></label>","<label class=""label""><span>til</span></label>",module,Magento_Catalog
 "[STORE VIEW]",[LAGERVISNING],module,Magento_Catalog
 "Add Product","Legg til produkt",module,Magento_Catalog
 label,etikett,module,Magento_Catalog
@@ -496,7 +522,9 @@ Cancel,Avbryt,module,Magento_Catalog
 "Not shared with other products.","Ikke delt med andre produkter.",module,Magento_Catalog
 "Add to Column Options","Legge til kolonnealternativer",module,Magento_Catalog
 "Use in Filter Options","Bruk filteralternativene",module,Magento_Catalog
+"Store View",Butikkvisning,module,Magento_Catalog
 Website,Nettside,module,Magento_Catalog
+"Use in Search","Bruk i Søk",module,Magento_Catalog
 "Visible in Advanced Search","Synlig i avansert søk",module,Magento_Catalog
 "Enable WYSIWYG","Aktiver WYSIWYG",module,Magento_Catalog
 Gallery,Galleri,module,Magento_Catalog
@@ -508,17 +536,25 @@ Text,Tekst,module,Magento_Catalog
 Static,Statisk,module,Magento_Catalog
 Decimal,Desimaltall,module,Magento_Catalog
 Integer,Heltall,module,Magento_Catalog
+Properties,Egenskaper,module,Magento_Catalog
 Visible,Synlig,module,Magento_Catalog
 Searchable,Søkbar,module,Magento_Catalog
+Comparable,Sammenlignbare,module,Magento_Catalog
+"Delete Selected Group","Slett valgt gruppe",module,Magento_Catalog
 "Add New","Legg til ny",module,Magento_Catalog
 Back,Tilbake,module,Magento_Catalog
 Reset,Tilbakestille,module,Magento_Catalog
+"Edit Attribute Set '%1'","Rediger attributtsett '%1'",module,Magento_Catalog
 Empty,Tom,module,Magento_Catalog
+"Add Attribute","Legge til attributt",module,Magento_Catalog
 "Add New Group","Legge til ny gruppe",module,Magento_Catalog
 "Add Group","Legg til gruppe",module,Magento_Catalog
+"Edit Attribute Set Name","Rediger attributtsettnavn",module,Magento_Catalog
 "For internal use","For intern bruk",module,Magento_Catalog
 "Based On","Basert på",module,Magento_Catalog
+"Add New Attribute Set","Legg til ny attributtssett",module,Magento_Catalog
 "Add Attribute Set","Legg til attributtsett",module,Magento_Catalog
+"Attribute Sets",Attributtsett,module,Magento_Catalog
 "Close Window","Lukk vindu",module,Magento_Catalog
 "New Product","Nytt produkt",module,Magento_Catalog
 "Save & Edit","Lagre & Rediger",module,Magento_Catalog
@@ -527,6 +563,7 @@ Empty,Tom,module,Magento_Catalog
 "Save & Close","Lagre og lukk",module,Magento_Catalog
 Attributes,Egenskaper,module,Magento_Catalog
 Change,Endre,module,Magento_Catalog
+"Advanced Inventory","Avansert lager",module,Magento_Catalog
 Websites,Nettsider,module,Magento_Catalog
 "Products Information",Produktinformasjon,module,Magento_Catalog
 "Create Category","Opprett kategori",module,Magento_Catalog
@@ -534,9 +571,15 @@ Websites,Nettsider,module,Magento_Catalog
 "First Name",Fornavn,module,Magento_Catalog
 "Last Name",Etternavn,module,Magento_Catalog
 Email,E-Post,module,Magento_Catalog
+"Attribute Set",Attributtsett,module,Magento_Catalog
+Visibility,Synlighet,module,Magento_Catalog
+"Add New Option","Legg til nytt alternativ",module,Magento_Catalog
+"Use Default","Bruk standard",module,Magento_Catalog
 Import,Importere,module,Magento_Catalog
+"Add New Row","Legg til ny rad",module,Magento_Catalog
 "Delete Row","Slett rad",module,Magento_Catalog
 "Default Price",Standardpris,module,Magento_Catalog
+"All Websites","Alle nettsteder",module,Magento_Catalog
 "Add Price","Legg til pris",module,Magento_Catalog
 "Related Products","Beslektede produkter",module,Magento_Catalog
 Quantity,Antall,module,Magento_Catalog
@@ -552,6 +595,7 @@ Home,Hjem,module,Magento_Catalog
 "Go to Home Page","Gå til forsiden",module,Magento_Catalog
 "-- Please Select --","-Vennligst velg--",module,Magento_Catalog
 None,Ingen,module,Magento_Catalog
+"New Products from %1","Nye produkter fra %1",module,Magento_Catalog
 "New Products","Nye produkter",module,Magento_Catalog
 "Click for price","Klikk for pris",module,Magento_Catalog
 "Price: %1","Pris: %1",module,Magento_Catalog
@@ -702,9 +746,12 @@ Enabled,Aktivert,module,Magento_CheckoutAgreements
 Disabled,Deaktivert,module,Magento_CheckoutAgreements
 "Show Content as","Vis innhold som",module,Magento_CheckoutAgreements
 Text,Tekst,module,Magento_CheckoutAgreements
+"Store View",Butikkvisning,module,Magento_CheckoutAgreements
 Content,Innhold,module,Magento_CheckoutAgreements
 "Content Height (css)","Innhold høyde (css)",module,Magento_CheckoutAgreements
 Sales,Salg,module,Magento_CheckoutAgreements
+Automatically,Automatisk,module,Magento_CheckoutAgreements
+Manually,Manuelt,module,Magento_CheckoutAgreements
 "Shopping Cart",Handlevogn,module,Magento_Checkout
 "Invalid method: %1","Ugyldig metode: %1",module,Magento_Checkout
 City,By,module,Magento_Checkout
@@ -859,6 +906,10 @@ Select,Velg,module,Magento_ConfigurableProduct
 Cancel,Avbryt,module,Magento_ConfigurableProduct
 "Page not found.","Fant ikke siden.",module,Magento_Contact
 "Thanks for contacting us with your comments and questions. We'll respond to you very soon.","Takk for at du kontaktet oss med dine kommentarer og spørsmål. Vi vil svare deg snart.",module,Magento_Contact
+"An error occurred while processing your form. Please try again later.","En feil oppstod under håndtering av skjemaet. Prøv igjen senere.",module,Magento_Contact
+"Name is missing","Navnet mangler",module,Magento_Contact
+"Comment is missing","Kommentar mangler",module,Magento_Contact
+"Invalid email address","Ugyldig e-postadresse",module,Magento_Contact
 "* Required Fields","* Obligatoriske felt",module,Magento_Contact
 "Write Us","Skrive til oss",module,Magento_Contact
 "Jot us a note and we’ll get back to you as quickly as possible.","Send oss et notat, og vi vil komme tilbake til deg så raskt som mulig.",module,Magento_Contact
@@ -1089,6 +1140,8 @@ Customers,Kunder,module,Magento_Customer
 "Attribute object is undefined","Attributtet er udefinert",module,Magento_Customer
 """%1"" invalid type entered.","""%1"" ugyldig type angitt.",module,Magento_Customer
 "If you believe this is an error, please contact us at %1","Hvis du tror dette er en feil, vennligst kontakt oss på %1",module,Magento_Customer
+Male,Mann,module,Magento_Customer
+"Not Specified","Ikke spesifisert",module,Magento_Customer
 "Thank you for registering with","Takk for din registrering med",module,Magento_Customer
 "enter your billing address for proper VAT calculation","angi din faktureringsadresse for riktig mva-beregning",module,Magento_Customer
 "enter your shipping address for proper VAT calculation","angi mottakeradresse for riktig mva-beregning",module,Magento_Customer
@@ -1186,6 +1239,7 @@ Company,Firmanavn,module,Magento_Customer
 Fax,Faks,module,Magento_Customer
 Gender,Kjønn,module,Magento_Customer
 Name,Navn,module,Magento_Customer
+"Tax/VAT number",Mva-nummer,module,Magento_Customer
 "Phone Number",Telefonnummer,module,Magento_Customer
 "Class for type ""%1"" was not declared","Klasse for type ""%1"" ble ikke erklært",module,Magento_Deploy
 "%1 does not implement %2","%1 implementerer ikke %2",module,Magento_Deploy
@@ -1277,9 +1331,14 @@ Reset,Nullstill,module,Magento_Email
 "Load Template","Last mal",module,Magento_Email
 "Currently Used For","For øyeblikket brukt til",module,Magento_Email
 "Template Content",Mal-innholdet,module,Magento_Email
+Preview,Forhåndsvis,module,Magento_Email
+"New Template","Ny mal",module,Magento_Email
+"New System Template","Ny Systemmal",module,Magento_Email
+"Email Templates","E-post maler",module,Magento_Email
 "Sales Representative Contact Name","Salgsrepresentativ kontaktnavn",module,Magento_Email
 "Sales Representative Contact Email","Salgsrepresentativ epost",module,Magento_Email
 Country,Land,module,Magento_Email
+City,By,module,Magento_Email
 "Street Address 1","Gateadresse 1",module,Magento_Email
 "Street Address 2","Gateadresse 2",module,Magento_Email
 "Invalid sender data","Ugyldig sender-data",module,Magento_Email
@@ -1455,35 +1514,52 @@ Total,Totalt,module,Magento_Multishipping
 "Total for this address","Totalt for denne adressen",module,Magento_Multishipping
 "Shipping Methods",Leveringsmåte,module,Magento_Multishipping
 "Edit Address","Rediger adresse",module,Magento_Multishipping
+"Edit Billing Address","Redigere leveringsadresse",module,Magento_Multishipping
 "Edit Shipping Address","Redigere leveringsadresse",module,Magento_Multishipping
 "Create Billing Address","Opprette faktureringsadresse",module,Magento_Multishipping
 "Create Shipping Address","Opprette leveringsadresse",module,Magento_Multishipping
+"Data saving problem","Data lagring problem",module,Magento_Multishipping
+"We cannot open the overview page.","Vi kan ikke åpne oversiktssiden.",module,Magento_Multishipping
+"Please agree to all Terms and Conditions before placing the order.","Vennligst godta alle vilkår og betingelser før bestilling.",module,Magento_Multishipping
 "Maximum qty allowed for Shipping to multiple addresses is %1","Maksimalt antall tillatt for levering til flere adresser er %1",module,Magento_Multishipping
 "Please check shipping address information.","Kontroller informasjon om leveringsadresse.",module,Magento_Multishipping
+"Please check billing address information.","Vennligst kontroller faktureringsadresse.",module,Magento_Multishipping
 "Please select shipping methods for all addresses.","Velg leveringsmetode for alle adresser.",module,Magento_Multishipping
+"A payment method is not defined.","En betalingsmåte er ikke definert.",module,Magento_Multishipping
 "The requested payment method is not available for multishipping.","Den angitte betalingsmetoden er ikke tilgjengelig for multifrakt.",module,Magento_Multishipping
+"Please specify a payment method.","Velg en betalingsmåte.",module,Magento_Multishipping
 "Please check shipping addresses information.","Kontroller informasjon om leveringsadresse.",module,Magento_Multishipping
 "Please specify shipping methods for all addresses.","Angi leveringsmetode for alle adresser.",module,Magento_Multishipping
 "Shipping Information",Leveringsinformasjon,module,Magento_Multishipping
+"Billing Information",Fakturainformasjon,module,Magento_Multishipping
 "Place Order",Bestill,module,Magento_Multishipping
 "Default Shipping","Standard frakt",module,Magento_Multishipping
+"Select Address","Velg adresse",module,Magento_Multishipping
 "Add New Address","Legg til ny adresse",module,Magento_Multishipping
 "Please select a shipping address for applicable items.","Velg en leveringsadresse for varene.",module,Magento_Multishipping
+Product,Produkt,module,Magento_Multishipping
 Qty,Antall,module,Magento_Multishipping
+"Send To","Send Til",module,Magento_Multishipping
 "A shipping selection is not applicable.","Fraktvalg er ikke tilgjengelig.",module,Magento_Multishipping
+Actions,Handlinger,module,Magento_Multishipping
 "Remove Item","Fjern produkt",module,Magento_Multishipping
 "Remove item","Fjern produkt",module,Magento_Multishipping
 "Go to Shipping Information","Gå til fraktinformasjon",module,Magento_Multishipping
 "Enter a New Address","Angi en ny adresse",module,Magento_Multishipping
 "Back to Shopping Cart","Tilbake til handlekurv",module,Magento_Multishipping
 "Billing Address",Faktureringsadresse,module,Magento_Multishipping
+Change,Endre,module,Magento_Multishipping
+"Payment Method",Betalingsmåte,module,Magento_Multishipping
 "Back to Shipping Information","Tilbake til leveringsinformasjon",module,Magento_Multishipping
 "Product Name",Produktnavn,module,Magento_Multishipping
+"Shipping Method",Leveringsmåte,module,Magento_Multishipping
 Item,Produkt,module,Magento_Multishipping
 Edit,Rediger,module,Magento_Multishipping
 Price,Pris,module,Magento_Multishipping
 Subtotal,Delsum,module,Magento_Multishipping
 Items,Produkter,module,Magento_Multishipping
+"Grand Total:",Totalsum:,module,Magento_Multishipping
+"Thank you for your purchase!","Takk for bestillingen!",module,Magento_Multishipping
 "Continue Shopping","Fortsett å handle",module,Magento_Multishipping
 "No New Relic Application ID configured, cannot continue with Cron Event reporting","Ingen New Relic program-ID'er er konfigurert, kan ikke fortsette med Cron hendelse rapportering",module,Magento_NewRelicReporting
 "The New Relic integration requires the newrelic-php5 agent, which is not installed. More 
@@ -1917,6 +1993,7 @@ Items,Produkter,module,Magento_Sales
 "Product Name",Produktnavn,module,Magento_Sales
 "You have placed no orders.","Du har ingen ordrer.",module,Magento_Sales
 "Print Order","Skriv ut ordre",module,Magento_Sales
+"About Your Order","Din bestilling",module,Magento_Sales
 "Gift Message for This Order","Gavemelding for denne bestillingen",module,Magento_Sales
 "Add to Cart","Legg i handlekurv",module,Magento_Sales
 "Search Term",Søkeord,module,Magento_Search
@@ -2184,6 +2261,8 @@ Themes,Temaer,module,Magento_Theme
 "Upload CSS File","Last opp CSS-fil",module,Magento_Theme
 "Download CSS File","Last ned CSS-filen",module,Magento_Theme
 Manage,Administrere,module,Magento_Theme
+"Upload Images","Last opp bilder",module,Magento_Theme
+General,Generelt,module,Magento_Theme
 Theme,Tema,module,Magento_Theme
 "Insert File","Sett inn fil",module,Magento_Theme
 "-- Please Select --","-Vennligst velg--",module,Magento_Theme
@@ -2537,10 +2616,22 @@ Edit,Rediger,module,Magento_GiftMessage
 "Apply Discount Code","Bruk rabattkode",module,Magento_SalesRule
 "Enter discount code","Angi rabattkode",module,Magento_SalesRule
 "Apply Discount","Aktiver rabatt",module,Magento_SalesRule
+"Credit memo for your %store_name order","Kreditnota for bestillingen %store_name",module,Magento_Sales
 "Thank you for your order from %store_name.","Takk for bestillingen din fra %store_name.",module,Magento_Sales
+"You can check the status of your order by <a href=""%account_url"">logging into your account</a>.","Du kan sjekke statusen for bestillingen din ved å <a href=""%account_url""> logge inn på din konto</a>.",module,Magento_Sales
 "If you have questions about your order, you can email us at <a href=""mailto:%store_email"">%store_email</a>","Hvis du har spørsmål om bestillingen, kan du sende oss epost på <a href=""mailto:%store_email""> %store_email</a>",module,Magento_Sales
 "or call us at <a href=""tel:%store_phone"">%store_phone</a>","eller ring oss på <a href=""tel:%store_phone""> %store_phone</a>",module,Magento_Sales
+"Your Credit Memo #%creditmemo_id for Order #%order_id","Din kreditnota #%creditmemo_id for ordre #%order_id",module,Magento_Sales
 "Shipping Info",Fraktinformasjon,module,Magento_Sales
+"Your order #%increment_id has been updated with a status of <strong>%order_status</strong>.","Din ordre #%increment_id har blitt oppdatert med statusen <strong>%order_status</strong>.",module,Magento_Sales
+"Invoice for your %store_name order","Faktura for bestillingen %store_name",module,Magento_Sales
+"Your Invoice #%invoice_id for Order #%order_id","Din faktura #%invoice_id for ordre #%order_id",module,Magento_Sales
+"Your %store_name order confirmation","Ordrebekreftelse for %store_name",module,Magento_Sales
+"Your Order <span class=""no-link"">#%increment_id</span>","Din ordre <span class=""no-link""> #%increment_id</span>",module,Magento_Sales
+"Once your package ships we will send an email with a link to track your order.","Når pakken sendes, sender vi en e-post med en link til å spore bestillingen.",module,Magento_Sales
+"Update to your %store_name order","Oppdatering til din %store_name ordre",module,Magento_Sales
+"Your %store_name order has shipped","Din %store_name ordre har blitt sendt",module,Magento_Sales
+"Your Shipment #%shipment_id for Order #%order_id","Din forsendelse #%shipment_id for ordre #%order_id",module,Magento_Sales
 "%sender_name wants to share this product with you:","%sender_name ønsker å dele dette produktet med deg:",module,Magento_SendFriend
 "Message from %sender_name:","Melding fra %sender_name:",module,Magento_SendFriend
 "See our Shipping Policy","Se retningslinjene for frakt",module,Magento_Shipping
@@ -2609,6 +2700,8 @@ Footer,Bunntekst,theme,frontend/Magento/luma
 "Your shipping confirmation is below. Thank you again for your business.","Bekreftelse for frakt er under. Takk for handelen.",theme,frontend/Magento/luma
 "Your Shipment #%shipment_id for Order #%order_id","Din forsendelse #%shipment_id for ordre #%order_id",theme,frontend/Magento/luma
 "Update to your %store_name shipment","Oppdatering til din %store_name forsendelse",theme,frontend/Magento/luma
+"Sorry, but something went wrong. Please contact the seller.","Beklager, men noe gikk galt. Ta kontakt med selgeren.",module,Magento_Authorizenet
+"We could not detect a size.","Vi kunne ikke oppdage en størrelse.",module,Magento_Backend
 "This payment is not available","Denne betalingen er ikke tilgjengelig",module,Magento_Braintree
 YY,ÅÅ,module,Magento_Braintree
 "Please try again with another form of payment.","Vennligst prøv på nytt med en annen betalingsmåte.",module,Magento_Braintree
@@ -2621,6 +2714,7 @@ Submit,Sende,module,Magento_Catalog
 "Image Detail",Bildedetaljer,module,Magento_Catalog
 Adding...,"Legger til...",module,Magento_Catalog
 Added,"Lagt til",module,Magento_Catalog
+Close,Lukk,module,Magento_CheckoutAgreements
 "Provided Zip/Postal Code seems to be invalid.","Gitt postnummeret synes å være ugyldig.",module,Magento_Checkout
 "If you believe it is the right one you can ignore this notice.","Hvis du mener det er riktig kan du ignorere denne meldingen.",module,Magento_Checkout
 "New Address","Ny adresse",module,Magento_Checkout
@@ -2636,6 +2730,7 @@ Medium,Middels,module,Magento_Customer
 Strong,Sterk,module,Magento_Customer
 "Very Strong","Veldig sterk",module,Magento_Customer
 "Guest checkout is disabled.","Gjeste checkout er deaktivert.",module,Magento_Customer
+"Please choose a payment method.","Vennligst velg en betalingsmåte.",module,Magento_Multishipping
 Cancel,Avbryt,module,Magento_ProductVideo
 "This won't take long . . .","Dette vil ikke ta lang tid . . .",module,Magento_Rule
 Yes,Ja,module,Magento_Ui
@@ -2655,6 +2750,7 @@ Severity,Alvorlighetsgrad,module,Magento_AdminNotification
 Message,Melding,module,Magento_AdminNotification
 Actions,Handlinger,module,Magento_AdminNotification
 Enabled,Aktivert,module,Magento_Authorizenet
+"Payment Action",Betalingshandling,module,Magento_Authorizenet
 Title,Tittel,module,Magento_Authorizenet
 "API Login ID","API påloggings-ID",module,Magento_Authorizenet
 "Transaction Key",Transaksjonsnøkkel,module,Magento_Authorizenet
@@ -2671,20 +2767,39 @@ Debug,Feilsøk,module,Magento_Authorizenet
 "Minimum Order Total","Minimum ordretotal",module,Magento_Authorizenet
 "Maximum Order Total","Maks ordretotal",module,Magento_Authorizenet
 "Sort Order",Sorteringsrekkefølge,module,Magento_Authorizenet
+"Allow everything","Tillat alt",module,Magento_Backend
+"Global Search","Globalt søk",module,Magento_Backend
+Marketing,Markedsføring,module,Magento_Backend
+"SEO & Search","SEO & søk",module,Magento_Backend
+"User Content",Brukerinnhold,module,Magento_Backend
+Content,Innhold,module,Magento_Backend
+Elements,Elementer,module,Magento_Backend
+Schedule,Tidsplan,module,Magento_Backend
 Settings,Innstillinger,module,Magento_Backend
+Attributes,Attributter,module,Magento_Backend
 "Other Settings","Andre innstillinger",module,Magento_Backend
 "Data Transfer",Dataoverføring,module,Magento_Backend
 "Package Extensions",Pakkeutvidelser,module,Magento_Backend
 Tools,Verktøy,module,Magento_Backend
+"Web Setup Wizard","Installasjonsveiviser for Web",module,Magento_Backend
 Currency,Valuta,module,Magento_Backend
 Communications,Kommunikasjon,module,Magento_Backend
 Services,Tjenester,module,Magento_Backend
 Advanced,Avansert,module,Magento_Backend
 "Disable Modules Output","Deaktiver modul output",module,Magento_Backend
 "Store Email Addresses","Butikk e-postadresser",module,Magento_Backend
+"Custom Email 1","Egendefinert epost 1",module,Magento_Backend
 "Sender Email","Avsender e-post",module,Magento_Backend
 "Sender Name","Avsender navn",module,Magento_Backend
+"Custom Email 2","Egendefinert epost 2",module,Magento_Backend
+"General Contact","Generell kontakt",module,Magento_Backend
 "Sales Representative",Salgsrepresentant,module,Magento_Backend
+"Customer Support",Kundestøtte,module,Magento_Backend
+Developer,Utvikler,module,Magento_Backend
+Debug,Feilsøk,module,Magento_Backend
+"Allow Symlinks","Tillate Symlinks",module,Magento_Backend
+"Warning! Enabling this feature is not recommended on production environments because it represents a potential security risk.","Advarsel! Aktivering av denne funksjonen anbefales ikke i produksjonsmiljøer fordi det representerer en mulig sikkerhetsrisiko.",module,Magento_Backend
+"Enabled for Admin","Aktivert for Admin",module,Magento_Backend
 "Country Options",Landsalternativ,module,Magento_Backend
 "Default Country",Standardland,module,Magento_Backend
 Country,Land,module,Magento_Backend
@@ -2727,6 +2842,11 @@ Priority,Prioritet,module,Magento_CatalogRule
 Apply,Bruk,module,Magento_CatalogRule
 "Discount Amount",Rabattbeløp,module,Magento_CatalogRule
 Yes,Ja,module,Magento_CatalogRule
+"Catalog Search","Katalog søk",module,Magento_CatalogSearch
+"Popular Search Terms","Populære søkeord",module,Magento_CatalogSearch
+"Minimal Query Length","Minimal spørringen lengde",module,Magento_CatalogSearch
+"Maximum Query Length","Maksimal spørringen lengde",module,Magento_CatalogSearch
+"Rebuild Catalog product fulltext search index","Gjenoppbygge katalogen produktet fulltext søkeindeksen",module,Magento_CatalogSearch
 "Category URL Suffix","Kategori URL suffiks",module,Magento_CatalogUrlRewrite
 "You need to refresh the cache.","Du må oppdatere hurtigbufferen.",module,Magento_CatalogUrlRewrite
 "Product URL Suffix","Produkt URL suffiks",module,Magento_CatalogUrlRewrite
@@ -2780,6 +2900,8 @@ Enable,Aktiver,module,Magento_Catalog
 Disable,Deaktiver,module,Magento_Catalog
 Overview,Oversikt,module,Magento_Catalog
 Details,Produktbeskrivelse,module,Magento_Catalog
+"Terms & Conditions","Vilkår og betingelser",module,Magento_CheckoutAgreements
+"Enable Terms and Conditions","Aktiver Vilkår og betingelser",module,Magento_CheckoutAgreements
 "Checkout Options",Utsjekkingsvalg,module,Magento_Checkout
 "After Adding a Product Redirect to Shopping Cart","Etter at produkt er lagt gå direkt videre til handlekurv",module,Magento_Checkout
 "Display Cart Summary","Vis handlekurv sammendrag",module,Magento_Checkout
@@ -2903,9 +3025,12 @@ Summary,Sammendrag,module,Magento_ImportExport
 Description,Beskrivelse,module,Magento_Indexer
 "Minimum Advertised Price","Minimum annonsert pris",module,Magento_Msrp
 "Display Actual Price","Vis faktisk pris",module,Magento_Msrp
+Options,Alternativer,module,Magento_Multishipping
 "Allow Shipping to Multiple Addresses","Tillate levering til flere adresser",module,Magento_Multishipping
 "Maximum Qty Allowed for Shipping to Multiple Addresses","Maksimalt antall tillatt for levering til flere adresser",module,Magento_Multishipping
+"Review Order","Gå igjennom ordren",module,Magento_Multishipping
 "Select Shipping Method","Velg leveringsmåte",module,Magento_Multishipping
+"We received your order!","Vi har mottatt din ordre!",module,Magento_Multishipping
 "New Relic Reporting Section","New Relic rapportseksjon",module,Magento_NewRelicReporting
 "New Relic Reporting","New Relic-rapportering",module,Magento_NewRelicReporting
 General,Generelt,module,Magento_NewRelicReporting
